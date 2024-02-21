@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "5b480374-efc0-413b-9a65-6be95fc29d6f",
+		"name": "JokerApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Balance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "appid",
+							"value": "abc123",
+							"type": "default"
+						},
+						{
+							"key": "hash",
+							"value": "xyz123",
+							"type": "default"
+						},
+						{
+							"key": "timestamp",
+							"value": "164536",
+							"type": "default"
+						},
+						{
+							"key": "username",
+							"value": "my_username",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/balance",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "appid",
+							"value": "abc123",
+							"type": "default"
+						},
+						{
+							"key": "hash",
+							"value": "xyz123",
+							"type": "default"
+						},
+						{
+							"key": "ip",
+							"value": "192.168.0.1",
+							"type": "default"
+						},
+						{
+							"key": "timestamp",
+							"value": "1645366625",
+							"type": "default"
+						},
+						{
+							"key": "username",
+							"value": "my_username",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "my_password",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/authenticate-token",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"authenticate-token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "appid",
+							"value": "abc123",
+							"type": "default"
+						},
+						{
+							"key": "hash",
+							"value": "xyz123",
+							"type": "default"
+						},
+						{
+							"key": "id",
+							"value": "some_id",
+							"type": "default"
+						},
+						{
+							"key": "amount",
+							"value": "100.50",
+							"type": "default"
+						},
+						{
+							"key": "username",
+							"value": "my_username",
+							"type": "default"
+						},
+						{
+							"key": "timestamp",
+							"value": "1645366625",
+							"type": "default"
+						},
+						{
+							"key": "gamecode",
+							"value": "000_gamecode",
+							"type": "default"
+						},
+						{
+							"key": "roundid",
+							"value": "111_roundid",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/bet",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SettleBet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "appid",
+							"value": "abc123",
+							"type": "default"
+						},
+						{
+							"key": "hash",
+							"value": "xyz123",
+							"type": "default"
+						},
+						{
+							"key": "id",
+							"value": "some_id",
+							"type": "default"
+						},
+						{
+							"key": "amount",
+							"value": "100.50",
+							"type": "default"
+						},
+						{
+							"key": "username",
+							"value": "my_username",
+							"type": "default"
+						},
+						{
+							"key": "timestamp",
+							"value": "1645366625",
+							"type": "default"
+						},
+						{
+							"key": "gamecode",
+							"value": "000_gamecode",
+							"type": "default"
+						},
+						{
+							"key": "roundid",
+							"value": "111_roundid",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "This is a dummy description",
+							"type": "default"
+						},
+						{
+							"key": "type",
+							"value": "battle_arena",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/settle-bet",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"settle-bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CancelBet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "appid",
+							"value": "abc123",
+							"type": "default"
+						},
+						{
+							"key": "hash",
+							"value": "xyz123",
+							"type": "default"
+						},
+						{
+							"key": "id",
+							"value": "some_id",
+							"type": "default"
+						},
+						{
+							"key": "username",
+							"value": "my_username",
+							"type": "default"
+						},
+						{
+							"key": "timestamp",
+							"value": "1645366625",
+							"type": "default"
+						},
+						{
+							"key": "gamecode",
+							"value": "000_gamecode",
+							"type": "default"
+						},
+						{
+							"key": "roundid",
+							"value": "111_roundid",
+							"type": "default"
+						},
+						{
+							"key": "betid",
+							"value": "my_betid",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/cancel-bet",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"cancel-bet"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

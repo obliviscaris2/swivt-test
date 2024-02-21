@@ -1,3 +1,25 @@
+## Using the Postman Collection
+
+To test the API endpoints, you can use the provided Postman collection.
+
+1. Download the [Postman collection](postman-collection/JokerApi.postman_collection.json) file from this repository.
+
+2. Import the collection into Postman:
+
+   - Open Postman.
+   - Click on the "Import" button.
+   - Choose the downloaded JSON file.
+   - The collection will be imported into Postman.
+
+3. Once imported, you can see all the API requests in the collection. Make sure to set up the environment variables if necessary.
+
+4. You can now send requests to the API endpoints and view the responses.
+
+
+## SEQUENCE DIAGRAM
+[seq-diagram.png](https://postimg.cc/3dm36pC3)
+
+
 <h1> Project Setup Instructions👋 </h1>
 
 <h4> These instructions will guide you through setting up and running the project locally on your machine. </h4>
